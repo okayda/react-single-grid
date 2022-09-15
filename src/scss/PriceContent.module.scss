@@ -1,0 +1,144 @@
+@import "./variables";
+@import "./mixins";
+
+.price {
+  padding: 0 1rem;
+
+  &__box {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    max-width: 38rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  &__content {
+    @include columnSpace(2rem);
+
+    background-color: #fff;
+    padding: 2rem;
+    color: darken($light-gray, 25%);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+    h2 {
+      font-size: 2.1rem;
+      color: $cyan;
+    }
+
+    span {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $bright-yellow;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+  }
+
+  &__value {
+    @include columnSpace(1.4rem);
+
+    background-color: $cyan;
+    padding: 2rem;
+    color: #fff;
+
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: $bright-yellow;
+      border: none;
+      padding: 1.4rem 0;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 0.6px;
+      border-radius: 9px;
+      font-size: 15px;
+
+      &:hover {
+        background-color: darken($bright-yellow, 5%);
+      }
+    }
+  }
+
+  &__cost {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .cost {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    .month {
+      color: #ddd;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__benefits {
+    @include columnSpace(1.4rem);
+
+    background-color: lighten($cyan, 7%);
+    padding: 1.6rem;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+
+    h2 {
+      font-size: 2.1rem;
+      color: #fff;
+    }
+  }
+
+  &__list {
+    @include columnSpace(0.6rem);
+
+    list-style: none;
+    color: $light-gray;
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: 48em) {
+    &__box {
+      max-width: 70rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__content {
+      grid-column: 1 / -1;
+      padding: 3rem;
+      justify-content: center;
+
+      h2 {
+        font-size: 2.4rem;
+      }
+
+      p {
+        width: 90%;
+      }
+    }
+
+    &__value {
+      justify-content: center;
+      padding: 3rem;
+      border-bottom-left-radius: 9px;
+    }
+
+    &__benefits {
+      justify-content: center;
+      padding: 3rem;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

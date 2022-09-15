@@ -1,0 +1,124 @@
+.price {
+  padding: 0 1rem;
+}
+.price__box {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  max-width: 38rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.price__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  color: #8ab4d0;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.price__content h2 {
+  font-size: 2.1rem;
+  color: hsl(179deg, 62%, 43%);
+}
+.price__content span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: hsl(71deg, 73%, 54%);
+}
+.price__content p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.price__value {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  background-color: hsl(179deg, 62%, 43%);
+  padding: 2rem;
+  color: #fff;
+}
+.price__value h2 {
+  font-size: 2.1rem;
+}
+.price__value p {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.price__value button {
+  cursor: pointer;
+  background-color: hsl(71deg, 73%, 54%);
+  border: none;
+  padding: 1.4rem 0;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  border-radius: 9px;
+  font-size: 15px;
+}
+.price__value button:hover {
+  background-color: #b7d822;
+}
+.price__cost {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.price__cost .cost {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.price__cost .month {
+  color: #ddd;
+  font-size: 1.8rem;
+}
+.price__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  background-color: #30cfcc;
+  padding: 1.6rem;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.price__benefits h2 {
+  font-size: 2.1rem;
+  color: #fff;
+}
+.price__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style: none;
+  color: hsl(204deg, 43%, 93%);
+  font-size: 1.4rem;
+}
+@media (min-width: 48em) {
+  .price__box {
+    max-width: 70rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .price__content {
+    grid-column: 1/-1;
+    padding: 3rem;
+    justify-content: center;
+  }
+  .price__content h2 {
+    font-size: 2.4rem;
+  }
+  .price__content p {
+    width: 90%;
+  }
+  .price__value {
+    justify-content: center;
+    padding: 3rem;
+    border-bottom-left-radius: 9px;
+  }
+  .price__benefits {
+    justify-content: center;
+    padding: 3rem;
+    border-bottom-left-radius: 0;
+  }
+}
