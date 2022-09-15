@@ -13,8 +13,8 @@ Users should be able to:
 
 ## Links
 
-- [Solution URL](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5)
-- [Live Site URL](https://jhon-okayda-manage-landing-page.netlify.app/)
+- [Solution URL](https://github.com/okayda/react-single-grid.git)
+- [Live Site URL](https://jhon-okayda-single-grid.netlify.app/)
 
 ## Built with
 
